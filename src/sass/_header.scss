@@ -1,0 +1,112 @@
+.header {
+
+    &__top {
+        padding: 13px 0;
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__container {
+        max-width: 1723px;
+        padding: 0 15px;
+    }
+
+    &__col {
+        width: 33.333%;
+        &--contacts {
+        }
+
+        &--logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        &--ui {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__contacts-whatsapp {
+        display: flex;
+        column-gap: 10px;
+        span {
+            color: #15AE31;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            transition: .2s;
+        }
+        &:hover a{
+            color: #15AE31;
+        }
+    }
+
+    &__logo {
+        display: block;
+        max-width: 170px;
+        width: 100%;
+        transition: .2s;
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__modal-btn {
+        max-width: 192px;
+        width: 100%;
+    }
+
+    &__btn-burger {
+        display: none;
+    }
+
+    &__bottom {
+    }
+    &__menu {
+        padding: 17px 0;
+    }
+
+    &__menu-list {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    &__menu-item {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none; 
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.container {
+}
+.modal-btn-open {
+}
+.btn {
+}
