@@ -12,7 +12,11 @@
 }
 
 @media (max-width:1440px){
-
+    .advantages {
+        h2 {
+            font-size: 88px;
+        }
+    }
 }
 
 @media (max-width:1220px){
@@ -207,6 +211,10 @@
     .advantages {
         &__items h3 {
             margin-top: 25px;
+        }
+
+        h2 {
+            font-size: 60px;
         }
     }
 
@@ -433,6 +441,13 @@
         }
     }
 
+    .advantages {
+        h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    }
+
     .garant {
         padding-top: 60px;
         padding-bottom: 80px;
@@ -470,7 +485,8 @@
 
             li {
                 margin-bottom: 30px;
-                padding-left: 30px;
+                column-gap: 10px;
+                align-items: flex-start !important;
             }
 
             li::before {

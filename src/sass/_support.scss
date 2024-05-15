@@ -46,7 +46,7 @@
 
 // Перевод из px в vw
 @function vw($size) {
-	@return calc($size / $vw) + vw;
+	@return calc($size / ($vw / 100)) + vw;
 }
 
 // Переменнные | _support
