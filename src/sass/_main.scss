@@ -17,13 +17,18 @@
     }
 
     img {
-        margin-top: 40px;
+        margin-top: 50px;
         width: 100%;
     }
 }
 
+.price + .help {
+    margin-top: 100px;
+}
+
 .advantages {
     padding-top: 80px;
+    padding-bottom: 100px;
     &__free {
         align-items: center;
         row-gap: 23px;
@@ -74,7 +79,6 @@
 }
 
 .take-key {
-    padding-top: 100px;
 
     .descr {
         margin-bottom: 50px;
@@ -94,6 +98,15 @@
 
     .descr {
         margin-bottom: 50px;
+    }
+
+    .col-lg-7 img {
+        max-width: max-content;
+        width: 100%;
+    }
+
+    .row {
+        row-gap: 30px;
     }
 }
 
@@ -194,11 +207,12 @@
         margin-bottom: -4.5vw;
     }
 
-    &--norevers {
-        img {
-            margin-top: 50px;
-            margin-bottom: 0;
-        }
+    .descr {
+        margin-bottom: 50px;
+    }
+
+    &--norevers img {
+        margin-bottom: 0;
     }
 }
 
@@ -214,7 +228,6 @@
     }
 
     &__items {
-        margin-top: 60px;
         row-gap: 70px;
         align-items: flex-start;
 
@@ -247,7 +260,6 @@
     }
 
     &__items {
-        margin-top: 50px;
         align-items: stretch;
         row-gap: 25px;
     }
@@ -390,8 +402,11 @@
         }
     }
 
-    &__descr {
+    .title-h2 + .descr {
+        margin-bottom: 0;
+    }
 
+    &__descr {
     }
 
     + section {

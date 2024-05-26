@@ -221,6 +221,7 @@
     }
 
     .advantages {
+        padding-bottom: 80px;
         &__items h3 {
             margin-top: 25px;
         }
@@ -304,13 +305,25 @@
     .statistic {
         margin-top: 60px;
 
-        .container, .row, .col-lg-12 {
+        &__container-image {
             padding: 0;
+            .row, .col-lg-12 {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .descr, .title-h2 {
+            text-align: left;
+        }
+
+        .descr {
+            margin-bottom: 40px;
         }
 
         img {
             margin-bottom: -10vw;
-            margin-left: 10px;
+            margin-left: 2px;
         }
     }   
 
@@ -385,6 +398,18 @@
             align-self: auto;
             margin-left: 0;
             margin-right: 0;
+        }
+    }
+
+    .rent-hot {
+
+        .title-h2 {
+            text-align: left;
+        }
+
+        .descr {
+            margin-bottom: 30px;
+            text-align: left;
         }
     }
 }
@@ -496,9 +521,7 @@
     .garant {
         padding-top: 60px;
         padding-bottom: 80px;
-        &__descr {
-            display: none;
-        }
+
 
         &__item {
             flex-direction: column;

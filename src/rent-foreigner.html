@@ -1,83 +1,17 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zlatmax | Development Version</title>
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="content">
-            <header class="header">
-                <div class="header__top">
-                    <div class="header__container container">
-                        <div class="header__row">
-                            <div class="header__col header__col--contacts">
-                                <div class="header__contacts-whatsapp">
-                                    <span>WhatsApp</span>
-                                    <a href="#">
-                                        +7 495 927-49-47
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="header__col header__col--logo">
-                                <a href="#" class="header__logo logo">
-                                    <img src="images/logo.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="header__col header__col--ui">
-                                <a href="#" class="header__modal-btn modal-btn-open btn btn--1 d-md-block d-none">
-                                    <span>Оставить заявку</span>
-                                </a>
-                                <button class="header__btn-burger d-md-none d-flex">
-                                    <span></span><span></span><span></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__bottom">
-                    <div class="header__container container">
-                        <nav class='header__menu'>
-                            <ul class='header__menu-list'>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Квартира</a></li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Дом</a></li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Недвижимость</a>
-                                </li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Аренда площадки</a>
-                                </li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Сдать
-                                        иностранцам</a>
-                                </li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Риэлторы
-                                        по аренде</a>
-                                </li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Стоимость аренды</a>
-                                </li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Стоимость услуг
-                                        по аренде</a></li>
-                                <li class='header__menu-item'><a href='#' class='header__menu-link'>Полезное</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
+@@include('./parts/header.html')
 <main>
     <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="banner__title">
-                        Сдать квартиру срочно в Санкт-Петербурге
+                        Сдать квартиру иностранцам
                     </h1>
                     <p class="descr text-color-1">
-                        Когда нужно сдать квартиру срочно в Санкт-Петербурге, приходится идти на определенные уступки,
-                        иначе поиск арендаторов может затянуться. Существует несколько способов, которые ускорят эту
-                        задачу
+                        «Сдам квартиру иностранцу в Санкт-Петербурге» – такое объявление нечасто можно встретить,
+                        ведь многие боятся заселять таджиков, киргизов или узбеков. Но страхи напрасны! Сдать иностранцу
+                        квартиру в Санкт-Петербурге безопасно, так как иностранцы больше дорожат жильём,
+                        чем соотечественники
                     </p>
                     <a href="#" class="btn btn--1 d-block d-sm-none">
                         <span>Оставить заявку</span>
@@ -98,46 +32,110 @@
             </div>
             <div class="row advantages__free">
                 <div class="col-lg-8">
-                    <div class="advantages__free-title">СКИДКА 10%</div>
+                    <img src="images/content/advantages/advantages-img2.webp" alt="">
                 </div>
                 <div class="col-lg-4">
                     <h3 class="title-h3">
-                        Снизить стоимость от рынка на 10%
+                        Большой спрос на жильё
                     </h3>
                     <p class="descr-sm">
-                        Такая скидка может оказаться весомым аргументом для многих арендаторов
+                        Сдать квартиру в аренду иностранцу в Санкт-Петербурге очень легко, так как спрос гораздо больше
+                        предложений на рынке недвижимости
                     </p>
                 </div>
             </div>
             <div class="row advantages__items">
                 <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
-                    <img src="images/content/advantages/advantages-item-img6-1.webp" alt="">
+                    <img src="images/content/advantages/advantages-item-img11-1.webp" alt="">
                     <h3 class="title-h3">
-                        Сдадим сами
+                        Многим требуется регистрация
                     </h3>
                     <p class="descr-sm">
-                        Сделаем фотографии, запустим рекламу, отберём кандидатов и устроим просмотры, не беспокоя
-                        хозяина квартиры по мелочам
+                        Временная регистрация не несёт для собственника негативных последствий или рисков, зато он может
+                        быть уверен, что жильцы не сбегут, а у контролирующих органов не возникнет вопросов
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
-                    <img src="images/content/advantages/advantages-item-img6-2.webp" alt="">
+                    <img src="images/content/advantages/advantages-item-img11-2.webp" alt="">
                     <h3 class="title-h3">
-                        Избавим от хлопот
+                        Живут дольше
                     </h3>
                     <p class="descr-sm">
-                        Наша команда поможет сдать 4-комнатную квартиру в Санкт-Петербурге в кратчайшие сроки
-                        и без лишней нервотрёпки
+                        Не ищут других вариантов жилья и держатся за арендованную квартиру, так как понимают, что сдать
+                        квартиру в аренду иностранцу в Санкт-Петербурге планируют не многие арендодатели
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
-                    <img src="images/content/advantages/advantages-item-img6-3.webp" alt="">
+                    <img src="images/content/advantages/advantages-item-img11-3.webp" alt="">
                     <h3 class="title-h3">
-                        Подберем жильцов
+                        Платят исправно
                     </h3>
                     <p class="descr-sm">
-                        Выбор арендаторов осуществляется на основании критериев, описанных владельцем, учтём семейное
-                        положение, возраст, национальность, отношение к животным и детям
+                        Турки, китайцы и другие иностранцы приезжают в Россию зарабатывать, стремятся закрепиться
+                        на новом месте, поэтому всегда своевременно вносят плату за жильё
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 alert">
+                    <p class="descr-sm">
+                        Опыт показывает, что иностранцы оказываются более порядочными, чистоплотными и ответственными, чем соотечественники, поэтому этот вариант сдачи квартиры точно стоит рассмотреть
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-h2">
+                        Бесплатно найдем вам жильцов
+                    </h2>
+                    <p class="descr">
+                        Если вы думаете, стоит ли сдавать квартиру иностранцу — доверьте поиск жильцов нашей компании. Мы подберём арендаторов с учётом ваших требований к национальности, возрасту и прочим критериям. А главное — убедимся в порядочности и платёжеспособности кандидатов
+                    </p>
+                </div>
+            </div>
+            <div class="row advantages__free">
+                <div class="col-lg-8">
+                    <img src="images/content/advantages/advantages-img3.webp" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="title-h3">
+                        Сделаем фото
+                    </h3>
+                    <p class="descr-sm">
+                        Представим все преимущества квартиры в выигрышном свете
+                    </p>
+                </div>
+            </div>
+            <div class="row advantages__items">
+                <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
+                    <img src="images/content/advantages/advantages-item-img12-1.webp" alt="">
+                    <h3 class="title-h3">
+                        Составим договор аренды
+                    </h3>
+                    <p class="descr-sm">
+                        Подготовим юридически грамотные документы, пропишем штрафы за порчу имущества и прочие нюансы для защиты ваших интересов
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
+                    <img src="images/content/advantages/advantages-item-img12-2.webp" alt="">
+                    <h3 class="title-h3">
+                        Опубликуем рекламу
+                    </h3>
+                    <p class="descr-sm">
+                        Разместим объявления на всех популярных площадках, чтобы о вашей квартире узнали, как можно больше людей
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 advantages__item">
+                    <img src="images/content/advantages/advantages-item-img12-3.webp" alt="">
+                    <h3 class="title-h3">
+                        Найдем подходящих жильцов
+                    </h3>
+                    <p class="descr-sm">
+                        Проведём тщательный отбор кандидатов и выберем тех, кто будет долго жить в квартире, исправно платить за аренду и не доставит хлопот
                     </p>
                 </div>
             </div>
@@ -145,63 +143,18 @@
     </section>
     <section class="rent-hot">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="title-h2">
-                        Сдать срочно через агентство
-                    </h2>
-                    <p class="descr">
-                        Если вы не хотите снижать арендную плату, у вас есть чёткие требования к будущим жильцам, но нет времени на длительные поиски, обратитесь в нашу компанию! Мы бесплатно подберём арендаторов и сможем сдать квартиру срочно в Санкт-Петербурге. Для вас работает команда специалистов с многолетним опытом работы. Мы найдём платёжеспособных квартиросъёмщиков с учётом всех ваших пожеланий и избавим вас от любых хлопот
-                    </p>
-                </div>
-            </div>
-            <div class="row">
+            <div class="row align-center">
                 <div class="col-lg-7">
                     <img src="images/content/take-key/take-key-img9.webp" alt="">
                 </div>
                 <div class="col-lg-5">
-                    <ul class="rent-hot__list">
-                        <li class="rent-hot__list-item">
-                            <h3 class="title-h3">
-                                До 2 дней
-                            </h3>
-                            <p class="descr-sm">
-                                В кратчайшие сроки найдем надежных арендаторов
-                            </p>
-                        </li>
-                        <li class="rent-hot__list-item">
-                            <h3 class="title-h3">
-                                Максимум от стоимости рынка
-                            </h3>
-                            <p class="descr-sm">
-                                Не нужно будет занижать цены, никакой упущенной выгоды
-                            </p>
-                        </li>
-                        <li class="rent-hot__list-item">
-                            <h3 class="title-h3">
-                                Приедем в день звонка
-                            </h3>
-                            <p class="descr-sm">
-                                Вам не придётся долго ждать — наши агенты приедут сразу же после согласования времени
-                            </p>
-                        </li>
-                        <li class="rent-hot__list-item">
-                            <h3 class="title-h3">
-                                До 2 дней
-                            </h3>
-                            <p class="descr-sm">
-                                В кратчайшие сроки найдем надежных арендаторов
-                            </p>
-                        </li>
-                        <li class="rent-hot__list-item">
-                            <h3 class="title-h3">
-                                Разместим хорошую рекламу
-                            </h3>
-                            <p class="descr-sm">
-                                Используем несколько сервисов и собственную базу контактов, чтобы добиться максимального охвата
-                            </p>
-                        </li>
-                    </ul>
+                    <h2 class="steps__title title-h2">Комиссию берём с нанимателей</h2>
+                    <p class="steps__descr descr">
+                        Комиссию берём с нанимателей
+                    </p>
+                    <a href="" class="steps__btn btn btn--1 btn--hover d-none d-lg-block">
+                        <span>Сдать квартиру иностранцам</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -264,7 +217,8 @@
                             О нас в цифрах
                         </h2>
                         <p class="descr">
-                            Сдать квартиру срочно в Санкт-Петербурге наша компания помогает без лишних нервов, рисков и проблем
+                            Сдать квартиру срочно в Санкт-Петербурге наша компания помогает без лишних нервов, рисков и
+                            проблем
                         </p>
                     </div>
                 </div>
@@ -286,7 +240,8 @@
                         На вашей стороне
                     </h2>
                     <p class="garant__descr descr">
-                        Интересы клиентов для нас в приоритете. Обращайтесь, чтобы сдать квартиру срочно в Санкт-Петербурге на выгодных условиях. Не пройдёт и недели, как вы получите залог!
+                        Интересы клиентов для нас в приоритете. Обращайтесь, чтобы сдать квартиру срочно
+                        в Санкт-Петербурге на выгодных условиях. Не пройдёт и недели, как вы получите залог!
                     </p>
                 </div>
             </div>
@@ -309,7 +264,8 @@
                             Не дадим шуметь
                         </h3>
                         <p class="descr-sm">
-                            Реагируем на жалобы, проводим беседы с шумными арендаторами и выселяем тех, кто не прислушивается к мнению соседей
+                            Реагируем на жалобы, проводим беседы с шумными арендаторами и выселяем тех,
+                            кто не прислушивается к мнению соседей
                         </p>
                     </div>
                 </div>
@@ -331,7 +287,8 @@
                             Не позволим жить посторонним
                         </h3>
                         <p class="descr-sm">
-                            Прописываем в договоре, кто вправе жить в квартире, чтобы не возникало неприятных ситуаций с подселением
+                            Прописываем в договоре, кто вправе жить в квартире, чтобы не возникало неприятных ситуаций
+                            с подселением
                         </p>
                     </div>
                 </div>
@@ -428,7 +385,8 @@
                 <div class="col-lg-5">
                     <h2 class="steps__title title-h2">Этапы сотрудничества</h2>
                     <p class="steps__descr descr">
-                        Если вы хотите сдать квартиру срочно в Санкт-Петербурге, просто обратитесь в нашу компанию и забудьте о любых сложностях.
+                        Если вы хотите сдать квартиру срочно в Санкт-Петербурге, просто обратитесь в нашу компанию
+                        и забудьте о любых сложностях.
                     </p>
                     <a href="" class="steps__btn btn btn--1 btn--hover d-none d-lg-block">
                         <span>Оставить заявку</span>
@@ -470,40 +428,4 @@
     </section>
 </main>
 </div>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 order-1 order-sm-0 footer__col footer__col--menu">
-                <ul class='footer__menu'>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Недвижимость</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Дом</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Квартира</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Сдать иностранцам</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Аренда площадки</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Риэлторы по аренде</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Стоимость аренды</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Стоимость услуг по аренде</a></li>
-                    <li class='footer__menu-item'><a href='#' class='footer__menu-link'>Полезное</a></li>
-                </ul>
-                <a href="#" class="footer__logo logo d-block d-sm-none">
-                    <img src="images/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-12 footer__col footer__col--info">
-                <div class="footer__info">
-                    <a href="#" class="footer__whatsapp">+7 495 927-49-47 <span>WhatsApp</span></a>
-                    <time class="footer__time" itemprop="openingHours" datetime="Mo, Tu, We, Th, Fr, Sa 7:00-18:00">Работаем с 9:00 до 21:00</time>
-                </div>
-                <a href="#" class="footer__logo logo d-none d-sm-block">
-                    <img src="images/logo.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-</div>
-
-<script src="JS/bundle.js"></script>
-</body>
-
-</html>
+@@include('./parts/footer.html')
