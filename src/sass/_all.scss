@@ -181,6 +181,10 @@ footer {
     font-weight: 500;
     line-height: 130%; /* 31.2px */
     margin: 0;
+
+    + .descr {
+        margin-top: 20px;
+    }
 }
 
 .descr {
@@ -192,6 +196,7 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    line-height: 150%; /* 24px */
 }
 
 .text-color-1 {
@@ -227,4 +232,29 @@ footer {
 
 .text-left {
     text-align: left;
+}
+
+.alert {
+    display: flex;
+    column-gap: 25px;
+    margin-top: 60px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    border: 2px solid #00C6FF;
+    &::before {
+        content: "!";
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 77.5%; /* 46.5px */
+        background: linear-gradient(90deg, #00C6FF -7.38%, #0072FF 105.23%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .descr-sm {
+        margin: 0;
+        font-weight: 500;
+        color: #000;
+    }
 }

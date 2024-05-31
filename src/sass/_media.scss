@@ -1,16 +1,3 @@
-@media (max-width:1500px){
-    .get {
-        &__grid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-}
-
 @media (max-width:1440px){
     .advantages {
         &__free-title {
@@ -23,6 +10,35 @@
     .garant {
         &__items {
             row-gap: 40px;
+        }
+    }
+
+    .call {
+        &__content {
+            padding-left: 50px;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+    }
+
+    .get {
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__grid-item {
+            padding-left: 0;
+            padding-right: 0;
+            img {
+                margin-top: 10px;
+                position: static;
+            }
+            
         }
     }
 
@@ -125,6 +141,27 @@
 }
 
 @media (max-width:786px){
+    // all 786
+    section + section, .gray-bg + section , .gray-linear-bg + section {
+        padding-top: 80px;
+    }
+
+    section:not(.take-key) + .gray-bg {
+        margin-top: 80px;
+    }
+
+    .alert-row {
+        padding: 0;
+        margin: 0 -25px;
+    }
+    
+    .alert {
+        padding: 20px 25px;
+        &::before {
+            display: none;
+        }
+    }
+
     .header {
         position: relative;
         z-index: 20;
@@ -221,7 +258,6 @@
     }
 
     .advantages {
-        padding-bottom: 80px;
         &__items h3 {
             margin-top: 25px;
         }
@@ -234,9 +270,13 @@
     .gray-bg {
         margin: 0;
         border-radius: 0;
-
+        padding-top: 40px;
         &:has(.steps + .help) .steps {
             padding-bottom: 60px;
+        }
+
+        &:not(.rent + *) {
+            padding-bottom: 50px;
         }
     }
 
@@ -284,7 +324,6 @@
 
 
     .rent {
-        padding-top: 80px;
 
         .title-h2 {
             text-align: left;
@@ -386,7 +425,7 @@
 
     .footer {
         padding: 60px 0;
-
+        margin-top: 80px;
         &__col--info {
             flex-direction: column;
             align-items: center;
@@ -412,9 +451,32 @@
             text-align: left;
         }
     }
+
+    // call 786
+    .call {
+
+        &__row {
+            margin: 0 -25px;
+        }
+
+        &__content {
+            padding-top: 230px;
+            background-image: url("../images/graphics/call/call-bg-mob.webp");
+            background-position: top right;
+            padding-right: 50px;
+        }
+
+        &__content-inner {
+            max-width: 100%;
+        }
+    }
+
 }
 
 @media (max-width:576px){
+
+    // all 576
+
     body {
         font-size: 14px;
     }
@@ -427,7 +489,41 @@
         font-size: 22px;
     }
 
+    .title-h2 {
+        text-align: left;
+        margin-bottom: 30px;
+
+        + .descr {
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .descr {
+        text-align: left;
+    }
+
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .input {
+        font-size: 14px;
+        padding: 15px 28px;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+        &::placeholder {
+            color: var(--Gray, rgba(0, 0, 0, 0.70));
+
+        }
+    }
+
     .header {
+
+        &__top {
+            border-color: transparent;
+        }
+
         &__col {
             width: 29%;
             &--logo {
@@ -439,28 +535,28 @@
         width: 100%;
         font-size: 14px;
         color: #fff;
-        &--1 {
+        &--1:not(.btn--hover) {
             background: linear-gradient(90deg, #00C6FF -7.38%, #0072FF 105.23%);
             &:after {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(90deg, #00C6FF -7.38%, #0072FF 105.23%);
             }
         }
 
-        &--2 {
+        &--2:not(.btn--hover) {
             background: linear-gradient(129deg, #EC1D41 0.54%, #5A0A2C 112.69%);
             &::after {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(129deg, #C31432 0.54%, #240B36 112.69%);
             }
         }
 
-        &--3 {
+        &--3:not(.btn--hover) {
             background: linear-gradient(128deg, #52C234 -9.29%, #1A4909 106.97%);
             &::after {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), linear-gradient(128deg, #52C234 -9.29%, #1A4909 106.97%);
             }
         }
 
-        &--4 {
+        &--4:not(.btn--hover) {
             background: #000;
             &::after {
                 background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), #000;
@@ -519,8 +615,6 @@
     }
 
     .garant {
-        padding-top: 60px;
-        padding-bottom: 80px;
 
 
         &__item {
@@ -554,7 +648,6 @@
     }
 
     .steps {
-        padding: 80px 0;
         &__list {
 
             li {
@@ -616,6 +709,38 @@
         &__item {
             padding: 20px 25px;
         }   
+    }
+
+    // call 576
+    .call {
+
+        &__content {
+            padding: 230px 25px 60px;
+        }
+
+        &__content-inner {
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__title .descr {
+            margin-top: 20px;
+        }
+
+        &__form {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__form-input {
+            max-width: 100%;
+        }
+
+        &__form-btn {
+            max-width: 100%;
+        }
     }
 }
 
