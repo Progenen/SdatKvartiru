@@ -186,6 +186,10 @@ footer {
     + .descr {
         margin-top: 20px;
     }
+
+    &--big {
+        font-size: 32px;
+    }
 }
 
 .descr {
@@ -202,6 +206,12 @@ footer {
 
 .text-color-1 {
     color: rgba(0, 0, 0, 0.70);
+}
+
+.text-center {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .descr-sm {
@@ -243,6 +253,7 @@ footer {
 
 .alert {
     display: flex;
+    align-items: center;
     column-gap: 25px;
     margin-top: 60px;
     padding: 25px 30px;
