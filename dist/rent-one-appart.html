@@ -30,7 +30,7 @@
                                 </a>
                             </div>
                             <div class="header__col header__col--ui">
-                                <a href="#" class="header__modal-btn modal-btn-open btn btn--1 d-md-block d-none">
+                                <a href="#modalForm" class="header__modal-btn modal-btn-open btn btn--1 d-md-block d-none modal-form__open">
                                     <span>Оставить заявку</span>
                                 </a>
                                 <button class="header__btn-burger d-md-none d-flex">
@@ -449,6 +449,40 @@
 </footer>
 </div>
 
+<div class="modal-form mfp-hide white-popup-block" id="modalForm">
+    <button class="modal-form__close">
+        <img src="images/icons/cross.svg" alt="">
+    </button>
+    <h2 class="modal-form__title title-h3 title-h3--big">
+        Заявка
+    </h2>
+    <p class="descr-sm">
+        Оставьте номер и мы перезвоним Вам
+    </p>
+    <form class="modal-form__form" action="#">
+        <input class="modal-form__form-input input" type="text" name="name" placeholder="Имя" required>
+        <input class="modal-form__form-input input" type="tel" name="phone" placeholder="Телефон" required>
+        <button class="modal-form__form-btn btn btn--1 btn--hover">
+            <span>оставить заявку</span>
+        </button>
+    </form>
+</div>
+<div class="thanks active">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 thanks__content">
+                <p>
+                    Мы получили Ваш номер, вскоре позвоним
+                </p>
+                <button class="thanks__btn btn">
+                    <span>Хорошо</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="JS/jquery-3.7.1.min.js"></script>
+<script src="JS/jquery.magnific-popup.min.js"></script>
 <script src="JS/bundle.js"></script>
 </body>
 
